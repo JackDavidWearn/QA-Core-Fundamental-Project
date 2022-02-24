@@ -10,11 +10,17 @@ The **Film Review Application** will have a **-One-to-Many-** relationship in th
 The **ERD** for this project and how it can also be extended further is shown below. 
 
 ## ERD
-After creating the Risk Assessment table, I have created the below ERD. 
-This outlines the relationship between the different tables in the database which the application will use, and how these tables will be setup. 
+The ERD below outlines the relationship between the different tables in the database which the application will use, and how these tables will be setup. 
+The first ERD shows the basic outline for the application. 
+![Image showing ERD for first iteration of application](/README_Images/Project_ERD_Initial.png)
+
+### Extended ERD
+The second ERD shows how it can be extended to have the intermediary reviews table between the films and reviewers table. 
+![Image showing ERD for extended iteration of application](/README_Images/Project_ERD_Extended.png)
 
 ## Risk Assessment
 The next step after deciding on the projects idea was to create a risk assessment. 
 This is a table which outlines the possible risks to the project, the likelihood of the risk occuring, the impact the risk would have to the project, the control that will take place to minimise/reduce the risk and how frequent that control needs to be carried out. The table can be seen below:
+![Image showing the Risk Assessment Table](/README_Images/Project_Risk_Assessment_Table.png)
 
 
