@@ -5,7 +5,7 @@ from application.models import Films, Reviewer
 # Home route, to display the home page
 @app.route('/')
 def home():
-    return Films.data()
+    return render_template('index.html')
 
 # Create a reviewer route
 @app.route('/create-reviewer')
