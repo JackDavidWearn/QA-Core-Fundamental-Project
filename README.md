@@ -2,7 +2,7 @@
 Repository for the DevOps Core Fundamental Project
 
 ## Table of Contents:
-* [Project Brief] (#Project-Brief)
+* [Project Brief] (#project-brief)
 * [Getting Started] (#Getting-Started)
 * [ERD] (#ERD)
 * [Extended ERD] (#Extended-ERD)
