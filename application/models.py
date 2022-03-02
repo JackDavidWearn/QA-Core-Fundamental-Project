@@ -1,3 +1,4 @@
+from sqlalchemy import ForeignKey
 from application import db
 
 class Films(db.Model):
@@ -17,3 +18,14 @@ class Reviewer(db.Model):
 
     def __str__(self):
         return f"{self.reviewer_name}"
+
+class Review(db.Model):
+    review_id = db.Column(db.Integer, primary_key=True)
+    fk_films_id = db.Column(db.Integer, ForeignKey('films.films_id'))
+    fk_reviewer_id = db.Column(db.Integer, ForeignKey('reviewer.reviewer_id'))
+    review_title = db.Column(db.String(250))
+    review_body = db.Column(db.String(2000))
+    review_stars = db.Column(db.Integer)
+
+    def __str__(self):
+        return f"Reviewer: {self.fk_reviewer_id} reviewed: {self.fk_films_id}. Title: {self.review_title} || Body: {self.review_body} || Stars: {self.review_stars}"
