@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Film Reviews</title>
-
     <style>
         body {
             margin: 0;
+            background-color: #000;
+            color: white;
         }
         
         ul.sidenav {
@@ -17,7 +18,7 @@
             margin: 0;
             padding: 0;
             width: 25%;
-            background-color: #f1f1f1;
+            background-color: #9f9f9f;
             position: fixed;
             height: 100%;
             overflow: auto;
@@ -30,13 +31,8 @@
             text-decoration: none;
         }
         
-        ul.sidenav li a.active {
-            background-color: #4CAF50;
-            color: white;
-        }
-        
         ul.sidenav li a:hover:not(.active) {
-            background-color: #555;
+            background-color: rgb(255, 115, 0);
             color: white;
         }
         
@@ -67,6 +63,16 @@
                 float: none;
             }
         }
+
+        a {
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: rgb(255, 115, 0);
+        }
     </style>
 
 </head>
@@ -77,8 +83,6 @@
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('createfilm') }}">Add film</a></li>
             <li><a href="{{ url_for('createreviewer') }}">Add Reviewer</a></li>
-            <li><a href="{{ url_for('updatefilm') }}">Update film</a></li>
-            <li><a href="{{ url_for('updatereviewer') }}">Update Reviewer</a></li>
         </ul>
     </div>
     <div class="content">
