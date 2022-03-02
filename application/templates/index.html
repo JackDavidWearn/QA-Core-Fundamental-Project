@@ -7,7 +7,13 @@
 <p>There is {{ num }} Films Available to Review!</p>
 {% endif %}
 {% for film in films %}
-{{ film.__str__()}}
+{{ film.__str__()}} <a href="{{ url_for('createreview') }}">Review Film</a> || <a href="#">Update Film Details</a>
+<br>
+{% endfor %}
+
+<h3>Reviews</h3>
+{% for review in reviews %}
+{{ review.__str__()}}
 <br>
 {% endfor %}
 {% endblock body %}
