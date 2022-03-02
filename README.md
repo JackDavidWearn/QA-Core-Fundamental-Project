@@ -1,6 +1,16 @@
 # QA-Core-Fundamental-Project
 Repository for the DevOps Core Fundamental Project
 
+## Table of Contents:
+* [Project Brief] (#Project-Brief)
+* [Getting Started] (#Getting-Started)
+* [ERD] (#ERD)
+* [Extended ERD] (#Extended-ERD)
+* [Risk Assessment] (#Rsik-Assessment)
+
+## Project Brief
+The brief for this project was to design and produce a web app of my choosing. The app needed to have CRUD (create, read, update and delete) functionality, needed to use the Flask micro-framework, and had to store information in a MySQL database comprised of a minimum of two tables sharing a one-to-many relationship.
+
 ## Getting Started
 The first step in starting this project was to decide on an idea for the project. 
 The idea that I have decided to pursue is a **Film Review Application**. This web app will allow a user to select a movie from the list of movies available to review, and leave a text review, along with assigning it a star rating. These reviews will then be displayed for anyone that enter the website and selects that movie. 
