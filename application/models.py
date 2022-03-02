@@ -1,10 +1,10 @@
 from application import db
 
 class Films(db.Model):
-    films_id = db.Column(db.Intger, primary_key=True)
+    films_id = db.Column(db.Integer, primary_key=True)
     films_title = db.Column(db.String(250))
     films_description = db.Column(db.String(2000))
-    films_release = db.Column(db.Date)
+    films_release = db.Column(db.Integer)
     films_time = db.Column(db.String(6))
     fk_reviewers_id = db.Column(db.Integer, db.ForeignKey('reviewer.reviewer_id'))
 
