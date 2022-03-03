@@ -73,6 +73,3 @@ class TestAddReview(TestBase):
             follow_redirects = True
         )
         self.assert200(response)
-
-class TestViewAllFilms(TestBase):
-    
