@@ -1,0 +1,13 @@
+{% extends 'layout.html' %} 
+{% block body %}
+{{ pageTitle }}
+{% if num_films == 0 %}
+<p>No Films Added Yet!</p>
+{% else %}
+<p>Displaying {{ num_films }} Films</p>
+{% endif %}
+{% for film in films %}
+<br>{{ film.__str__()}} <a href="{{ url_for('viewfilmreviews', films_id=film.films_id) }}">View all reviews</a>
+<br>
+{% endfor %}
+{% endblock body %}
