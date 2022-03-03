@@ -1,13 +1,13 @@
 {% extends 'layout.html' %} 
 {% block body %}
 {{ pageTitle }}
-{% if num_reviews == 0 %}
+{% if num_reviewers == 0 %}
 <p>No Reviewers Added Yet!</p>
 {% else %}
-<p>Displaying {{ num_reviews }} Reviews</p>
+<p>Displaying {{ num_reviewers }} Reviewers</p>
 {% endif %}
-{% for review in reviews %}
-<br>{{ review.__str__()}}
+{% for reviewer in reviewers %}
+<br>{{ reviewer.__str__()}}
 <br>
 {% endfor %}
 {% endblock body %}
