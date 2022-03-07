@@ -1,19 +1,34 @@
 {% extends 'layout.html' %} 
 {% block body %}
 <h2>Home</h2>
+<h3>Films</h3>
 {% if num == 0 %}
 <p>No Films Added Yet!</p>
 {% else %}
 <p>There is {{ num }} Films Available to Review!</p>
 {% endif %}
 {% for film in films %}
-{{ film.__str__()}} <a href="{{ url_for('createreview') }}">Review Film</a> || <a href="#">Update Film Details</a>
+{{ film.__str__()}} <a href="{{ url_for('updatefilm', films_id=film.films_id) }}">( Update Film Details</a> || <a href="{{ url_for('deletefilm', films_id=film.films_id) }}">Delete Movie )</a>
 <br>
 {% endfor %}
-
+<br>
+<h3>Reviewers</h3>
+{% for reviewer in reviewers %}
+<br>{{ reviewer.__str__()}} <a href="{{ url_for('updatereviewer', reviewer_id=reviewer.reviewer_id) }}">( Update Reviewer</a> || <a href="{{ url_for('deletereviewer', reviewer_id=reviewer.reviewer_id) }}">Delete Reviewer )</a>
+<br>
+{% endfor %}
+<br>
 <h3>Reviews</h3>
 {% for review in reviews %}
-{{ review.__str__()}}
+{% for film in films %}
+{% for reviewer in reviewers %}
+{% if film.films_id == review.fk_films_id %}
+{% if reviewer.reviewer_id == review.fk_reviewer_id %}
+<br>{{ reviewer.__str__(display=True) + " " + film.__str__(test=True) + " " + review.__str__() }} <a href="{{ url_for('updatereview', review_id=review.review_id) }}">( Update Review</a> || <a href="{{ url_for('deletereview', review_id=review.review_id) }}">Delete Review )</a>
 <br>
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endfor %}
 {% endfor %}
 {% endblock body %}
