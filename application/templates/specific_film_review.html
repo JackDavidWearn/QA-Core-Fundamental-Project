@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} 
+{% block body %}
+<h2>{{ pageTitle }}</h2>
+<h3>Film: {{ film.films_title }}</h3>
+<h3>Reviews</h3>
+{% with filmid=film.films_id %} 
+{% for review in reviews %}
+{% for film in films %}
+{% for reviewer in reviewers %}
+{% if film.films_id == review.fk_films_id %}
+{% if reviewer.reviewer_id == review.fk_reviewer_id %}
+{% if film.films_id == filmid %}
+<br>{{ reviewer.__str__(display=True) + " " + film.__str__(test=True) + " " + review.__str__() }}
+<br>
+{% endif %}
+{% endif %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endwith %}
+{% endblock body %}

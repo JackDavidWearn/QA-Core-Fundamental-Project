@@ -1,0 +1,11 @@
+{% extends 'layout.html' %} 
+{% block body %}
+<h2>Add Reviewer</h2>
+<div  class="form">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.reviewer_name.label }} <br> {{ form.reviewer_name }} <br><br>
+        {{ form.submit }}
+    </form>
+</div>
+{% endblock body %}
