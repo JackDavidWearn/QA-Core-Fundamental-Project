@@ -8,6 +8,7 @@ Repository for the DevOps Core Fundamental Project
 * [CI Pipeline](#ci-pipeline)
 * [Risk Assessment](#Risk-Assessment)
 * [Testing](#Testing)
+* [The Application](#The Application)
 
 ## Project Brief
 The brief for this project was to design and produce a web app of my choosing. The app needed to have CRUD (create, read, update and delete) functionality, needed to use the Flask micro-framework, and had to store information in a MySQL database comprised of a minimum of two tables sharing a one-to-many relationship. This can be seen in the screenshot below, which outlines the structure of the project. 
