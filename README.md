@@ -61,5 +61,5 @@ This is a table which outlines the possible risks to the project, the likelihood
 ![Image showing the Risk Assessment Table](/README_Images/Project_Risk_Assessment_Table.png)
 
 ## Testing
-
+An essential part of the production of the application was testing the web app. 
 
