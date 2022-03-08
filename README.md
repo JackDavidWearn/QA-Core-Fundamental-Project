@@ -47,7 +47,11 @@ By working in this way (with the feature branch model), it allowed for the proje
 ### Development Environment
 The development environment which was used for the development of this project was python3 virtual environment (venv) which was hosted on a virtual machine running Ubunto Pro 20.04. Flask is a python based framework, and therefore python3 was required. The virtual environment allows for pip3 installs to be performed, so the virtual environment can run all of the required frameworks, such as Flask. This also means that there will be no conflicting installs when testing new software on the virtual environment as this will have different installs compared to the live environment. 
 
+### Jenkins
+Jenkins was used as a build server, which provided automation for building and testing the projects application. To achieve automation, a freestyle project was needed to be setup. This freestyle project executes the test.sh file when a webhook is recieved from github when pushing a commit to the Development branch. 
 
+The full CI Pipeline can be seen in the diagram below:
+![Image showing the full CI Pipline](/README_Images/CI_Pipeline_Diagram.drawio.png)
 
 ## Risk Assessment
 The next step after deciding on the projects idea was to create a risk assessment. 
