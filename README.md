@@ -7,6 +7,7 @@ Repository for the DevOps Core Fundamental Project
 * [ERD](#ERD)
 * [CI Pipeline](#ci-pipeline)
 * [Risk Assessment](#Risk-Assessment)
+* [Testing](#Testing)
 
 ## Project Brief
 The brief for this project was to design and produce a web app of my choosing. The app needed to have CRUD (create, read, update and delete) functionality, needed to use the Flask micro-framework, and had to store information in a MySQL database comprised of a minimum of two tables sharing a one-to-many relationship. This can be seen in the screenshot below, which outlines the structure of the project. 
@@ -58,5 +59,7 @@ The full CI Pipeline can be seen in the diagram below:
 The next step after deciding on the projects idea was to create a risk assessment. 
 This is a table which outlines the possible risks to the project, the likelihood of the risk occuring, the impact the risk would have to the project, the control that will take place to minimise/reduce the risk and how frequent that control needs to be carried out. The table can be seen below:
 ![Image showing the Risk Assessment Table](/README_Images/Project_Risk_Assessment_Table.png)
+
+## Testing
 
 
