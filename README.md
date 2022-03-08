@@ -44,6 +44,9 @@ By working in this way (with the feature branch model), it allowed for the proje
 ![Image showing the network diagram](/README_Images/Project_Network_Graph_One.png)
 ![Image showing the network diagram](/README_Images/Project_Network_Graph_Two.png)
 
+### Development Environment
+The development environment which was used for the development of this project was python3 virtual environment (venv) which was hosted on a virtual machine running Ubunto Pro 20.04. Flask is a python based framework, and therefore python3 was required. The virtual environment allows for pip3 installs to be performed, so the virtual environment can run all of the required frameworks, such as Flask. This also means that there will be no conflicting installs when testing new software on the virtual environment as this will have different installs compared to the live environment. 
+
 
 
 ## Risk Assessment
