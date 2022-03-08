@@ -26,7 +26,8 @@ The first ERD shows the basic outline for the application.
 ![Image showing ERD for first iteration of application](/README_Images/Project_ERD_Initial.png)
 
 ### Extended ERD
-The second ERD shows how it can be extended to have the intermediary reviews table between the films and reviewers table. 
+The second ERD shows how it can be extended to have the intermediary reviews table between the films and reviewers table.
+ 
 ![Image showing ERD for extended iteration of application](/README_Images/Project_ERD_Extended.png)
 
 ## CI Pipeline
