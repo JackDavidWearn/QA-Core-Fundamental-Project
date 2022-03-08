@@ -5,7 +5,6 @@ Repository for the DevOps Core Fundamental Project
 * [Project Brief](#Project-Brief)
 * [Getting Started](#Getting-Started)
 * [ERD](#ERD)
-* [Extended ERD](#Extended-ERD)
 * [CI Pipeline](#ci-pipeline)
 * [Risk Assessment](#Risk-Assessment)
 
@@ -33,9 +32,19 @@ The second ERD shows how it can be extended to have the intermediary reviews tab
 ## CI Pipeline
 Other than what was mentioned above, the project specification also required the implementation of some of the elements of a typical CI Pipeline. This included: project tracking, version control, development environment and build server. 
 
+### Project Tracking
 For project tracking, I used Trello in order to build a project tracking board. Each of the different tasks was added to the project backlog and during the course of the sprint, each item was moved from the backlog to in progress, to completed and finally to pushed to main once the task had been pushed to main on the Github repository. The board at the start of the project can be seen below:
 ![Image showing Trello board at the start of the project](/README_Images/Trello_Board_Start.png)
 The following link will take you to the [Trello Board](https://trello.com/b/sUR77DK2/qa-core-fundamental-project) to view the full board. 
+
+### Version Control
+For Version Control, git was used. The repository for the project was hosted and stored on github. Version control allows for the recall of past work that has been completed and git has great integration within CI Pipelines and allows for easy creation through the feature-branch model for version control. To achieve this model of production, a new branch was created from the development branch for each of the different features that was being developed. Once these were fully functional, they could then be pull requested back to the development branch. Only once a "full version" of working code was stored within the development branch would a pull request be made to merge the changes back to the main (live environment) branch. 
+
+By working in this way (with the feature branch model), it allowed for the project to progress and extended work be worked on without the risk of the live product breaking while attempting to extend the project further. The screenshot below shows the network diagram for the project, which outlines each of the different branches during the procution up to version 1.0 being deployed to main. 
+![Image showing the network diagram](/README_Images/Project_Network_Graph_One.png)
+![Image showing the network diagram](/README_Images/Project_Network_Graph_Two.png)
+
+
 
 ## Risk Assessment
 The next step after deciding on the projects idea was to create a risk assessment. 
