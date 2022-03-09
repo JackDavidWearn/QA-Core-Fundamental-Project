@@ -126,7 +126,7 @@ Another way in which a user can read the data is by going to each of the differe
 The final way in which a user can read the data, is by selecting to view all the reviews for any specific film. This is done through the view all films page, and selecting the film you would like to see all the reviews for. This can be seen in the screenshots below:
 
 ![Reading All Reviews for a Film page](/README_Images/View_All_Reviews_Specific_Film.png)
-![Reading All Reviews for a Film page](/README_Images/View_All_Reviews_Specific_Film._2png)
+![Reading All Reviews for a Film page](/README_Images/View_All_Reviews_Specific_Film._2.png)
 
 
 ### Update:
