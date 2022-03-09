@@ -5,10 +5,19 @@ Repository for the DevOps Core Fundamental Project
 * [Project Brief](#Project-Brief)
 * [Getting Started](#Getting-Started)
 * [ERD](#ERD)
+    * [Extended ERD](#extended-erd)
 * [CI Pipeline](#ci-pipeline)
+    * [Project Tracking](#project-tracking)
+    * [Version Control](#version-control)
+    * [Development Environment](#development-environment)
+    * [Jenkins](#jenkins)
 * [Risk Assessment](#Risk-Assessment)
 * [Testing](#Testing)
 * [The Application](#The-Application)
+    * [Create](#create)
+    * [Read](#read)
+    * [Update](#update)
+    * [Delete](#delete)
 
 ## Project Brief
 The brief for this project was to design and produce a web app of my choosing. The app needed to have CRUD (create, read, update and delete) functionality, needed to use the Flask micro-framework, and had to store information in a MySQL database comprised of a minimum of two tables sharing a one-to-many relationship. This can be seen in the screenshot below, which outlines the structure of the project. 
