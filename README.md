@@ -66,7 +66,7 @@ An essential part of the production of the application was testing the web app. 
 
 The testing that did take place however was the following:
 * Unit testing: 
-    ** Unit tests were used for the applications functionality. They are used to test all of the different functions of the application. The unit tests that were written are able to test the Create, Read, Update and Delete functionality of the web application, ensuring it is all working as intended. 
+    ** Unit tests were used for the applications functionality. They are used to test all of the different functions of the application. The unit tests that were written are able to test the **C**reate, **R**ead, **U**pdate and **D**elete (**CRUD**) functionality of the web application, ensuring it is all working as intended. 
 * Integration testing:
     ** Integration testing ...
 
@@ -78,8 +78,5 @@ The webhook was setup so that for every push and pull request to the Development
 
 The following screenshot shows the coverage report HTML page which is created after every successful build:
 ![Image showing the html output of coverage report from pytest](/README_Images/Pytest_Coverage_report.png)
-
-
-
 
 ## The Application
