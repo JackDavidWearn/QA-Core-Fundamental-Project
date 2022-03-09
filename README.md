@@ -18,6 +18,8 @@ Repository for the DevOps Core Fundamental Project
     * [Read](#read)
     * [Update](#update)
     * [Delete](#delete)
+* [Known Issues](#known-issues)
+* [Future Work/Improvements](#future-workimprovements)
 
 ## Project Brief
 The brief for this project was to design and produce a web app of my choosing. The app needed to have CRUD (create, read, update and delete) functionality, needed to use the Flask micro-framework, and had to store information in a MySQL database comprised of a minimum of two tables sharing a one-to-many relationship. This can be seen in the screenshot below, which outlines the structure of the project. 
@@ -157,4 +159,7 @@ The screenshot above shows the home page with the now deleted review.
 
 The screenshot above shows the view all reviews page with the review entry now deleted. 
 
+## Known Issues
+
+## Future Work/Improvements
 
