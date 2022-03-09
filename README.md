@@ -66,9 +66,9 @@ An essential part of the production of the application was testing the web app. 
 
 The testing that did take place however was the following:
 * Unit testing: 
-    ** Unit tests were used for the applications functionality. They are used to test all of the different functions of the application. The unit tests that were written are able to test the **C**reate, **R**ead, **U**pdate and **D**elete (**CRUD**) functionality of the web application, ensuring it is all working as intended. 
+    * Unit tests were used for the applications functionality. They are used to test all of the different functions of the application. The unit tests that were written are able to test the **C**reate, **R**ead, **U**pdate and **D**elete (**CRUD**) functionality of the web application, ensuring it is all working as intended. 
 * Integration testing:
-    ** Integration testing ...
+    * Integration testing ...
 
 All testing was performed automatically by using Jenkins via a github webhook. The screenshot below shows a log which is created after every Github webhook on the Jenkins server. 
 ![Image showing the webhook log on the Jenkins server](/README_Images/Jenkins_github_webhook_log.png)
