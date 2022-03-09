@@ -80,3 +80,24 @@ The following screenshot shows the coverage report HTML page which is created af
 ![Image showing the html output of coverage report from pytest](/README_Images/Pytest_Coverage_report.png)
 
 ## The Application
+The aim of the application is to build a **CRUD** (**C**reate, **R**ead, **U**pdate and **D**elete) application. The following outlines how each of these functions has been achieved within the application. 
+### Create:
+The create function of the application has three different functionalities, these being:
+* Create a film
+* Create a reviewer
+* Create a review
+The below screenshots shows how a film is created within the application:
+
+The below screenshots shows how a reviewer is created and added to the database:
+
+The below screenshots shows how a review is created based on a reviewer and film:
+
+### Read:
+In order to read the data from the application which has been added, the user has a number of options. This being the home page, which displays the different films, reviewers and reviews which have been added to the application. This can be seen in the screenshot below:
+
+Another way in which a user can read the data is by going to each of the different "View All X" pages, wherre X can be either: films, reviewers or reviews. The different pages can be seen in the screenshot below:
+
+The final way in which a user can read the data, is by selecting to view all the reviews for any specific film. This is done through the view all films page, and selecting the film you would like to see all the reviews for. This can be seen in the screenshots below:
+
+
+### Update:
