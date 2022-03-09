@@ -96,7 +96,17 @@ The below screenshots shows how a film is created within the application:
 
 The below screenshots shows how a reviewer is created and added to the database:
 
+![Adding a Film](/README_Images/Home_With_Film.png)
+![Adding a Film](/README_Images/Add_Reviewer.png)
+![Adding a Film](/README_Images/Add_Reviewer_w_Details.png)
+![Adding a Film](/README_Images/Home_With_Film_and_Reviewer.png)
+
 The below screenshots shows how a review is created based on a reviewer and film:
+
+![Adding a Film](/README_Images/Home_With_Film_and_Reviewer.png)
+![Adding a Film](/README_Images/Add_Review.png)
+![Adding a Film](/README_Images/Add_Review_W_Details.png)
+![Adding a Film](/README_Images/Home_w_Film_Reviewer_Review.png)
 
 ### Read:
 In order to read the data from the application which has been added, the user has a number of options. This being the home page, which displays the different films, reviewers and reviews which have been added to the application. This can be seen in the screenshot below:
