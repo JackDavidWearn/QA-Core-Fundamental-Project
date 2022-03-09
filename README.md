@@ -118,9 +118,9 @@ In order to read the data from the application which has been added, the user ha
 
 Another way in which a user can read the data is by going to each of the different "View All X" pages, wherre X can be either: films, reviewers or reviews. The different pages can be seen in the screenshot below:
 
-![Reading All Reviews for a Film page](/README_Images/View_all_films.png)
-![Reading All Reviews for a Film page](/README_Images/View_All_Reviewers.png)
-![Reading All Reviews for a Film page](/README_Images/View_All_Reviews.png)
+![Reading All Films](/README_Images/View_all_films.png)
+![Reading All Reviewers](/README_Images/View_All_Reviewers.png)
+![Reading All Reviewers](/README_Images/View_All_Reviews.png)
 
 
 The final way in which a user can read the data, is by selecting to view all the reviews for any specific film. This is done through the view all films page, and selecting the film you would like to see all the reviews for. This can be seen in the screenshots below:
@@ -130,3 +130,23 @@ The final way in which a user can read the data, is by selecting to view all the
 
 
 ### Update:
+A user is able to update any entry into the application. This can be a film, reviewer or review. Each are done in a similar way, in that there is a link displayed with each entry which allows the user to update the details. The screenshots below show the process of updating a film entry. 
+
+![Updating a film](/README_Images/Update_Film_1.png)
+![Updating a film](/README_Images/Update_Film_2.png)
+![Updating a film](/README_Images/Home_w_Updated_Film.png)
+The screenshot above shows the homepage with the updated film on it. 
+
+### Delete:
+A user is able to delete any entry into the application. This can be a film, reviewer or review. Each are completed in the same way, with a link being added next to each entry which is added to the application. When a user clicks on the delete button, the entry will be removed from the database and then will no longer be displayed on any of the pages. 
+
+![Deleting Review](/README_Images/Delete_Review_1.png)
+![Deleting Review](/README_Images/Home_w_Deleted_Review.png)
+
+The screenshot above shows the home page with the now deleted review. 
+
+![Deleting Review](/README_Images/View_All_Reviews_w_Deleted.png)
+
+The screenshot above shows the view all reviews page with the review entry now deleted. 
+
+
