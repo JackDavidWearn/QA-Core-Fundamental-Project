@@ -67,6 +67,19 @@ An essential part of the production of the application was testing the web app. 
 The testing that did take place however was the following:
 * Unit testing: 
     ** Unit tests were used for the applications functionality. They are used to test all of the different functions of the application. The unit tests that were written are able to test the Create, Read, Update and Delete functionality of the web application, ensuring it is all working as intended. 
+* Integration testing:
+    ** Integration testing ...
+
+All testing was performed automatically by using Jenkins via a github webhook. The screenshot below shows a log which is created after every Github webhook on the Jenkins server. 
+![Image showing the webhook log on the Jenkins server](/README_Images/Jenkins_github_webhook_log.png)
+
+The webhook was setup so that for every push and pull request to the Development branch triggered a build on Jenkins, which resulted in the tests (from the API pytest) being performed on the jenkins server. Everytime this Jenkins build was triggered and completed, a artifact was created which outputted the coverage report for the tests into a HTML page. The artifact can be seen on the Jenkins server in the screenshot below:
+![Image showing the artifact that is created after a build is run](/README_Images/Jenkins_artifacts.png)
+
+The following screenshot shows the coverage report HTML page which is created after every successful build:
+![Image showing the html output of coverage report from pytest](/README_Images/Pytest_Coverage_report.png)
+
+
 
 
 ## The Application
