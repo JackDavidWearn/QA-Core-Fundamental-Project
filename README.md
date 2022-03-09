@@ -116,7 +116,6 @@ The below screenshots shows how a reviewer is created and added to the database:
 The below screenshots shows how a review is created based on a reviewer and film:
 
 ![Adding a Review](/README_Images/Home_With_Film_and_Reviewer.png)
-![Adding a Review](/README_Images/Add_Review.png)
 ![Adding a Review](/README_Images/Add_Review_W_Details.png)
 ![Adding a Review](/README_Images/Home_w_Film_Reviewer_Review.png)
 
