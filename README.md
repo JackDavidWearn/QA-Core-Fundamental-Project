@@ -98,25 +98,35 @@ The below screenshots shows how a film is created within the application:
 #### Add Reviewer:
 The below screenshots shows how a reviewer is created and added to the database:
 
-![Adding a Film](/README_Images/Home_With_Film.png)
-![Adding a Film](/README_Images/Add_Reviewer.png)
-![Adding a Film](/README_Images/Add_Reviewer_w_Details.png)
-![Adding a Film](/README_Images/Home_With_Film_and_Reviewer.png)
+![Adding a Reviewer](/README_Images/Home_With_Film.png)
+![Adding a Reviewer](/README_Images/Add_Reviewer.png)
+![Adding a Reviewer](/README_Images/Add_Reviewer_w_Details.png)
+![Adding a Reviewer](/README_Images/Home_With_Film_and_Reviewer.png)
 
 #### Add Review:
 The below screenshots shows how a review is created based on a reviewer and film:
 
-![Adding a Film](/README_Images/Home_With_Film_and_Reviewer.png)
-![Adding a Film](/README_Images/Add_Review.png)
-![Adding a Film](/README_Images/Add_Review_W_Details.png)
-![Adding a Film](/README_Images/Home_w_Film_Reviewer_Review.png)
+![Adding a Review](/README_Images/Home_With_Film_and_Reviewer.png)
+![Adding a Review](/README_Images/Add_Review.png)
+![Adding a Review](/README_Images/Add_Review_W_Details.png)
+![Adding a Review](/README_Images/Home_w_Film_Reviewer_Review.png)
 
 ### Read:
 In order to read the data from the application which has been added, the user has a number of options. This being the home page, which displays the different films, reviewers and reviews which have been added to the application. This can be seen in the screenshot below:
 
+![Reading the home page](/README_Images/Home_w_Film_Reviewer_Review.png)
+
 Another way in which a user can read the data is by going to each of the different "View All X" pages, wherre X can be either: films, reviewers or reviews. The different pages can be seen in the screenshot below:
 
+![Reading All Reviews for a Film page](/README_Images/View_all_films.png)
+![Reading All Reviews for a Film page](/README_Images/View_All_Reviewers.png)
+![Reading All Reviews for a Film page](/README_Images/View_All_Reviews.png)
+
+
 The final way in which a user can read the data, is by selecting to view all the reviews for any specific film. This is done through the view all films page, and selecting the film you would like to see all the reviews for. This can be seen in the screenshots below:
+
+![Reading All Reviews for a Film page](/README_Images/View_All_Reviews_Specific_Film.png)
+![Reading All Reviews for a Film page](/README_Images/View_All_Reviews_Specific_Film._2png)
 
 
 ### Update:
