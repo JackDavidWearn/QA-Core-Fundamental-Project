@@ -8,7 +8,7 @@ Repository for the DevOps Core Fundamental Project
 * [CI Pipeline](#ci-pipeline)
 * [Risk Assessment](#Risk-Assessment)
 * [Testing](#Testing)
-* [The Application](#The Application)
+* [The Application](#The-Application)
 
 ## Project Brief
 The brief for this project was to design and produce a web app of my choosing. The app needed to have CRUD (create, read, update and delete) functionality, needed to use the Flask micro-framework, and had to store information in a MySQL database comprised of a minimum of two tables sharing a one-to-many relationship. This can be seen in the screenshot below, which outlines the structure of the project. 
@@ -62,5 +62,11 @@ This is a table which outlines the possible risks to the project, the likelihood
 ![Image showing the Risk Assessment Table](/README_Images/Project_Risk_Assessment_Table.png)
 
 ## Testing
-An essential part of the production of the application was testing the web app.    
+An essential part of the production of the application was testing the web app. The application being built is not a production application and therefore security testing was outside the scope for this project. However, if this was not the case security testing would have been performed on the application to ensure that it is secure both for the end users and from any malicious attacks such as a MITM, SQLInjection or DDOS attack. 
 
+The testing that did take place however was the following:
+* Unit testing: 
+    ** Unit tests were used for the applications functionality. They are used to test all of the different functions of the application. The unit tests that were written are able to test the Create, Read, Update and Delete functionality of the web application, ensuring it is all working as intended. 
+
+
+## The Application
