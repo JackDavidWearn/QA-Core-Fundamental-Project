@@ -87,6 +87,7 @@ The create function of the application has three different functionalities, thes
 * Create a reviewer
 * Create a review
 
+#### Add Film:
 The below screenshots shows how a film is created within the application:
 
 ![Adding a Film](/README_Images/Home_No_Entries.png)
@@ -94,6 +95,7 @@ The below screenshots shows how a film is created within the application:
 ![Adding a Film](/README_Images/Add_film_w_Details.png)
 ![Adding a Film](/README_Images/Home_With_Film.png)
 
+#### Add Reviewer:
 The below screenshots shows how a reviewer is created and added to the database:
 
 ![Adding a Film](/README_Images/Home_With_Film.png)
@@ -101,6 +103,7 @@ The below screenshots shows how a reviewer is created and added to the database:
 ![Adding a Film](/README_Images/Add_Reviewer_w_Details.png)
 ![Adding a Film](/README_Images/Home_With_Film_and_Reviewer.png)
 
+#### Add Review:
 The below screenshots shows how a review is created based on a reviewer and film:
 
 ![Adding a Film](/README_Images/Home_With_Film_and_Reviewer.png)
