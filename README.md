@@ -13,11 +13,15 @@ Repository for the DevOps Core Fundamental Project
     * [Jenkins](#jenkins)
 * [Risk Assessment](#Risk-Assessment)
 * [Testing](#Testing)
+    * [Unit Testing](#Unit-Testing)
+    * [Integration Testing](#Integration-Testing)
 * [The Application](#The-Application)
     * [Create](#create)
     * [Read](#read)
     * [Update](#update)
     * [Delete](#delete)
+    * [Database](#database)
+    * [Versions](#versions)
 * [Known Issues](#known-issues)
 * [Future Work/Improvements](#future-workimprovements)
 
@@ -79,8 +83,9 @@ The testing that did take place however was the following:
 * Unit testing: 
     * Unit tests were used for the applications functionality. They are used to test all of the different functions of the application. The unit tests that were written are able to test the **C**reate, **R**ead, **U**pdate and **D**elete (**CRUD**) functionality of the web application, ensuring it is all working as intended. 
 * Integration testing:
-    * Integration testing ...
+    * Integration testing was used to test the forms within the application. Each test was run by inputting actual data into each of the different forms within the application to ensure that the forms were functioning correctly. The reason why both Unit testing and Integration testing was used was because unit tests just plug data into the database and check if it is stored and displayed, however integration testing actually tests the functionality of the forms themseleves. 
 
+### Unit Testing
 All testing was performed automatically by using Jenkins via a github webhook. The screenshot below shows a log which is created after every Github webhook on the Jenkins server. 
 ![Image showing the webhook log on the Jenkins server](/README_Images/Jenkins_github_webhook_log.png)
 
@@ -89,6 +94,13 @@ The webhook was setup so that for every push and pull request to the Development
 
 The following screenshot shows the coverage report HTML page which is created after every successful build:
 ![Image showing the html output of coverage report from pytest](/README_Images/Pytest_Coverage_report.png)
+
+### Integration Testing
+To perform the integration testing, Selenium was used in order to test to functionality of the forms within the application. These did have to run on another server so was not setup within Jenkins due to them needing to run on Ubunto version 18.04 rather than Ubunto Version 20 which was used for the production Virtual Machine. The following screenshot shows the coverage report for all the tests being run, integration and unit testing. The integration tests are the files which start with "test_int_X" where X is what is being tested within that file. 
+![Image showing the htmk output for all of the tests being run](/README_Images/Integration_Tests.png)
+
+The next screenshot shows the output in the terminal rather than in HTML format. 
+![Image showing the htmk output for all of the tests being run](/README_Images/Integration_Tests_2.png)
 
 ## The Application
 The aim of the application is to build a **CRUD** (**C**reate, **R**ead, **U**pdate and **D**elete) application. The following outlines how each of these functions has been achieved within the application. 
@@ -159,7 +171,16 @@ The screenshot above shows the home page with the now deleted review.
 
 The screenshot above shows the view all reviews page with the review entry now deleted. 
 
+### Database
+Two different databases were used in the development of the application, one being an sqlite database server for the development side of the application and MySQL for the live web server. 
+
+### Versions
+Each time a pull request was made to the main, this was classed as a new version of the finished application. As a result, whenever a fully developed version was completed in the Development branch and was pull requested to main, it would be assigned a new version of the application (Version 1.0, 1.1, 1.2, etc...). It started with version 1.0 followed by 1.1 as no significant code changes where made in between the two versions and therefore did not warrant a version 2.0 being made. However, if a user login and registration was to be developed, when completed this would be pushed to main as version 2.0 as a significant change to the application would have been made. 
+
 ## Known Issues
+There are a few issues that have arose, mainly with final functionality of the application as a full fledged web application rather than any issues with the code or how it works. The main one being that any user can delete and update any entry that has been made onto the database/web application. An imporovement to this is discussed in more detail below in the [Future Work/Improvements](#future-workimprovements) section, but in short: the fix for this would be to have all users create an account and then they can only edit what they have added to the application (i.e., reviews/reviewers). 
 
 ## Future Work/Improvements
+In the future, it would be good to implement a user registration/login functionality. This would eliminate the issue that any user can edit or delete any entry into the web application. A database design for this is shown below in the screenshot, but it would essentially allow any user to create an account and that user can make many reviews for many films, but would not be able to edit entries that they have not made. 
 
+![Image showing how the database would change](/README_Images/Database_design_improvements.png)
