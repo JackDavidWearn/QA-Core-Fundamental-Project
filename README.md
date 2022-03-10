@@ -77,7 +77,8 @@ The full CI Pipeline can be seen in the diagram below:
 ## Risk Assessment
 The next step after deciding on the projects idea was to create a risk assessment. 
 This is a table which outlines the possible risks to the project, the likelihood of the risk occuring, the impact the risk would have to the project, the control that will take place to minimise/reduce the risk and how frequent that control needs to be carried out. The table can be seen below:
-![Image showing the Risk Assessment Table](/README_Images/Project_Risk_Assessment_Table.png)
+![Image showing the Risk Assessment Table](/README_Images/Risk_Assessment_Table.png)
+![Image showing the Risk Assessment Table](/README_Images/Risk_Assessment_JKey.png)
 
 ## Testing
 An essential part of the production of the application was testing the web app. The application being built is not a production application and therefore security testing was outside the scope for this project. However, if this was not the case security testing would have been performed on the application to ensure that it is secure both for the end users and from any malicious attacks such as a MITM, SQLInjection or DDOS attack. 
