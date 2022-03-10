@@ -172,13 +172,22 @@ The screenshot above shows the home page with the now deleted review.
 The screenshot above shows the view all reviews page with the review entry now deleted. 
 
 ### Database
-Two different databases were used in the development of the application, one being an sqlite database server for the development side of the application and MySQL for the live web server. 
+Two different databases were used in the development of the application, one being an sqlite database server for the development side of the application and MySQL for the live web server. The sqlite database was used for testing and development of the application, while the mysql database running on Google Cloud Platform was used for the live environment. This meant that tests could be run without adding unneeded data entries into the live environment. The screenshots below show snapshots of the mysql database with entries from the live server. 
+
+![Image showing database](/README_Images/Database_1.png)
+![Image showing database](/README_Images/Database_2.png)
+![Image showing database](/README_Images/Database_3.png)
 
 ### Versions
 Each time a pull request was made to the main, this was classed as a new version of the finished application. As a result, whenever a fully developed version was completed in the Development branch and was pull requested to main, it would be assigned a new version of the application (Version 1.0, 1.1, 1.2, etc...). It started with version 1.0 followed by 1.1 as no significant code changes where made in between the two versions and therefore did not warrant a version 2.0 being made. However, if a user login and registration was to be developed, when completed this would be pushed to main as version 2.0 as a significant change to the application would have been made. 
 
 ## Known Issues
 There are a few issues that have arose, mainly with final functionality of the application as a full fledged web application rather than any issues with the code or how it works. The main one being that any user can delete and update any entry that has been made onto the database/web application. An imporovement to this is discussed in more detail below in the [Future Work/Improvements](#future-workimprovements) section, but in short: the fix for this would be to have all users create an account and then they can only edit what they have added to the application (i.e., reviews/reviewers). 
+
+Another issue that arose was that Jenkins could not build with the integration tests as it was running on Ubunto 20.04. However, this was corrected by recreating the jenkins servers disk so that it was running Ubunto 18.04 and resetup to take the Github webhook. The result of this can be seen in the screenshots below, showing 100% coverage for the unit testing and the integration testing and a successful build. 
+
+![Image showing 100% overage](/README_Images/Integration_full_jenkins.png)
+![Image showing 100% overage](/README_Images/Integration_full_jenkins_2.png)
 
 ## Future Work/Improvements
 In the future, it would be good to implement a user registration/login functionality. This would eliminate the issue that any user can edit or delete any entry into the web application. A database design for this is shown below in the screenshot, but it would essentially allow any user to create an account and that user can make many reviews for many films, but would not be able to edit entries that they have not made. 
