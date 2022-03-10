@@ -20,6 +20,7 @@ Repository for the DevOps Core Fundamental Project
     * [Read](#read)
     * [Update](#update)
     * [Delete](#delete)
+    * [Database](#database)
     * [Versions](#versions)
 * [Known Issues](#known-issues)
 * [Future Work/Improvements](#future-workimprovements)
@@ -169,6 +170,9 @@ The screenshot above shows the home page with the now deleted review.
 ![Deleting Review](/README_Images/View_All_Reviews_w_Deleted.png)
 
 The screenshot above shows the view all reviews page with the review entry now deleted. 
+
+### Database
+Two different databases were used in the development of the application, one being an sqlite database server for the development side of the application and MySQL for the live web server. 
 
 ### Versions
 Each time a pull request was made to the main, this was classed as a new version of the finished application. As a result, whenever a fully developed version was completed in the Development branch and was pull requested to main, it would be assigned a new version of the application (Version 1.0, 1.1, 1.2, etc...). It started with version 1.0 followed by 1.1 as no significant code changes where made in between the two versions and therefore did not warrant a version 2.0 being made. However, if a user login and registration was to be developed, when completed this would be pushed to main as version 2.0 as a significant change to the application would have been made. 
