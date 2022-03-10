@@ -65,7 +65,7 @@ def createreview():
 def viewallfilms():
     num_films = Films.query.count()
     films = Films.query.all()
-    return render_template('view_all_films.html', num_films=num_films, films=films, PageTitle="All Films")
+    return render_template('view_all_films.html', num_films=num_films, films=films, pageTitle="All Films")
 
 # View all reviews for a specific movie
 @app.route('/view-film-reviews/<int:films_id>', methods=['GET', 'POST'])
@@ -81,14 +81,14 @@ def viewfilmreviews(films_id):
 def viewallreviewers():
     num_reviewers = Reviewer.query.count()
     reviewers = Reviewer.query.all()
-    return render_template('view_all_reviewers.html', num_reviewers=num_reviewers, reviewers=reviewers, PageTitle="All Reviewers")
+    return render_template('view_all_reviewers.html', num_reviewers=num_reviewers, reviewers=reviewers, pageTitle="All Reviewers")
 
 # View all reviews route
 @app.route('/view-all-reviews', methods=['GET', 'POST'])
 def viewallreviews():
     num_reviews = Review.query.count()
     reviews = Review.query.all()
-    return render_template('view_all_reviews.html', num_reviews=num_reviews, reviews=reviews, PageTitle="All Reviews")
+    return render_template('view_all_reviews.html', num_reviews=num_reviews, reviews=reviews, pageTitle="All Reviews")
 
 # Update a movie route
 @app.route('/update-film/<int:films_id>', methods=['GET', 'POST'])
