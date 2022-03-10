@@ -55,6 +55,9 @@ For project tracking, I used Trello in order to build a project tracking board. 
 ![Image showing Trello board at the start of the project](/README_Images/Trello_Board_Start.png)
 The following link will take you to the [Trello Board](https://trello.com/b/sUR77DK2/qa-core-fundamental-project) to view the full board. 
 
+A Burndown chart was also produced, which can be seen below:
+![Image showing burndownn chart](/README_Images/Burndown_Chart.png)
+
 ### Version Control
 For Version Control, git was used. The repository for the project was hosted and stored on github. Version control allows for the recall of past work that has been completed and git has great integration within CI Pipelines and allows for easy creation through the feature-branch model for version control. To achieve this model of production, a new branch was created from the development branch for each of the different features that was being developed. Once these were fully functional, they could then be pull requested back to the development branch. Only once a "full version" of working code was stored within the development branch would a pull request be made to merge the changes back to the main (live environment) branch. 
 
