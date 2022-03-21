@@ -19,7 +19,7 @@ pipeline {
     }
     post {
         always {
-            archiveArtifacts artifact: "htmlcov/"
+            archiveArtifacts artifacts: "htmlcov/"
         }
     }
 }
