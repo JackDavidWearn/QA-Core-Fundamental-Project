@@ -8,3 +8,5 @@ flask-testing
 pytest-cov
 selenium
 gunicorn
+itsdangerous==2.0.1
+markupsafe==2.0.1

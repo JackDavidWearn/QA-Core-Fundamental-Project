@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  application:
+    container_name: application
+    image: jwearn1999/qatrio-app:latest
+    networks:
+      - qatrio-net
+    environment:
+      secret_key: asdfghjklqwertyuiopzxcvbnm
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    networks:
+      - qatrio-net
+    volumes:
+      - type: bind
+        source: ./nginx/nginx.conf
+        target: /etc/nginx/nginx.conf
+    ports:
+      - target: 80
+        published: 80
+        protocol: tcp
+volumes:
+  qatrio-volume:
+networks:
+  qatrio-net:
+    external: True
