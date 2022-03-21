@@ -7,9 +7,4 @@ pipeline {
             }
         }
     }
-    post {
-        always {
-            archiveArtifacts: "htmlcov/"
-        }
-    }
 }
