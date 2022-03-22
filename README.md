@@ -1,8 +1,6 @@
 # QA-Core-Fundamental-Project
 Repository for the DevOps Core Fundamental Project
 
-sh "/bin/bash -c 'docker rmi \$(docker images -q)'"
-
 ## Table of Contents:
 * [Project Brief](#Project-Brief)
 * [Getting Started](#Getting-Started)
