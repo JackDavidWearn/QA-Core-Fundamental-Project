@@ -1,0 +1,6 @@
+*.sh
+*.md
+.gitignore
+figures/
+application/tests/
+create.py
