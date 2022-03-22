@@ -4,7 +4,6 @@ pipeline {
         stage('test') {
             steps {
                 dir('flask-app') {
-                    sh "rm application/tests/test_int*"
                     sh "bash test.sh"
                 }
             }
