@@ -43,4 +43,3 @@ volumes:
   app-vol:
 networks:
   app-net:
-   # driver: overlay (uncomment when deploying via docker stack)
